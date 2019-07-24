@@ -38,9 +38,10 @@
                 </div>
 
                 <div class="top-bar-4 col-md-3">
-                    <a class="btn btn-default btn-info btn-sm" href="#" role="button">免费注册</a>
+                    <a class="btn btn-default btn-info btn-sm" href="#" role="button"
+                       data-toggle="modal" data-target="#myreg">免费注册</a>
                     <a class="text-muted" href="#"
-                       style="margin-left: 10px;" role="button"
+                       style="margin-left: 10px; text-decoration: none;" role="button"
                        data-toggle="modal" data-target="#myModal">立即登录</a>
                 </div>
             </div>
@@ -445,19 +446,91 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content mymodal">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">登录</h4>
+                <h4 class="modal-title text-lg" id="myModalLabel">
+                    <span class="text-primary span_title">Bootstrap-College</span>
+                    登录</h4>
             </div>
             <div class="modal-body">
-                <input type="text" placeholder="请输入手机号码">
-                <input type="text" placeholder="请输入验证码">
+                <form>
+                    <form-group>
+                        <label for="username">用户名/手机/邮箱</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon-user"></i></div>
+                            <input type="username" id="username" class="form-control">
+                        </div>
+                    </form-group>
+                    <form-group>
+                        <label for="password">密码</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon-lock"></i></div>
+                            <input type="password" id="password" class="form-control">
+                        </div>
+                    </form-group>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <form-group class="pull-left my-padding">
+                    <input type="checkbox"><span class="text-muted">10天免登录</span>
+                </form-group>
+                <button type="submit" class="btn btn-primary form-control my-padding">登录</button>
+                <a href="javascript:;" class="pull-left my-padding">忘记密码</a>
+                <a href="javascript:;" class="pull-right my-padding"
+                   data-toggle="modal" data-target="#myreg" data-dismiss="modal">去注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myreg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mymodal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-lg" id="myregLabel">
+                    <span class="text-primary span_title">Bootstrap-College</span>
+                    注册</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username">手机/邮箱</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon-user"></i></div>
+                            <input type="text" id="user" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">验证码</label>
+                        <div class="row">
+                            <div class="col-xs-8 input-code">
+                                <input type="text" id="code" class="form-control">
+                            </div>
+                            <div class="col-xs-4 btn-code">
+                                <button class="btn btn-primary">获取验证码</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon-lock"></i></div>
+                            <input type="password" id="pass" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <form-group class="pull-left my-padding">
+                    <input type="checkbox" checked><span class="text-muted">同意BC的使用协议</span>
+                </form-group>
+                <button type="submit" class="btn btn-primary form-control my-padding">注册</button>
+                <a href="javascript:;" class="my-padding"
+                   data-toggle="modal" data-target="#myModal" data-dismiss="modal">去登录</a>
             </div>
         </div>
     </div>

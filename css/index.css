@@ -55,8 +55,18 @@ body {
     font-size: 13px;
 }
 
+.icon-lock::before {
+    content: '\e98f';
+    font-size: 13px;
+}
+
 .icon-tel::before {
     content: '\e942';
+    font-size: 13px;
+}
+
+.icon-user::before {
+    content: '\e971';
     font-size: 13px;
 }
 
@@ -290,4 +300,55 @@ body {
 #lk_footer .p3_1>a {
     margin-right: 20px;
     text-decoration: none;
+}
+
+/**********************分割线***********************/
+
+.mymodal {
+    width: 350px;
+    padding: 20px 10px;
+}
+
+#myModal, #myreg {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.modal-header {
+    text-align: center;
+}
+.modal-header .text-lg {
+    font-weight: bold;
+    font-size: 20px;
+}
+.modal-header .span_title {
+    font-size: 14px;
+}
+.modal-body {
+
+}
+.modal-footer {
+    text-align: center;
+
+}
+
+.modal-footer a {
+    text-decoration: none;
+}
+
+.my-padding {
+    padding: 5px 0;
+}
+
+.input-group-addon {
+    background-color: #fff;
+}
+
+.input-code {
+    padding-right: 0;
+}
+.btn-code {
+    padding-left: 0;
 }
