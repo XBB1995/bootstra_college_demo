@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap学院</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<!--头部-->
+<header id="lk_header">
+    <!--顶部（可消失）-->
+    <div class="top-bar hidden-xs hidden-sm text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-2">
+                    <a href="javascript:;" class="text-muted">
+                        <i class="icon-phone"></i>
+                        <span>关注微信号</span>
+                        <span class="caret"></span>
+                        <img src="img/wechat.jpg" alt="" width="140px">
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-5">
+                    <i class="icon-tel"></i>
+                    <span>8888-8888-8888</span>
+                </div>
+                <div class="top-bar-3 col-md-2">
+                    <a href="#" class="text-muted">校企合作</a>
+                    <a href="#" class="text-muted">培训师</a>
+                </div>
+
+                <div class="top-bar-4 col-md-3">
+                    <a class="btn btn-default btn-info btn-sm" href="#" role="button">免费注册</a>
+                    <a class="text-muted" href="#"
+                       style="margin-left: 10px;" role="button"
+                       data-toggle="modal" data-target="#myModal">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航条-->
+    <nav class="navbar navbar-default navbar-static-top nav-dz">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs_nav"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" style="width: 25%;">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs_nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="javascript:;">课程介绍</a></li>
+                    <li><a href="javascript:;">热门课程</a></li>
+                    <li><a href="javascript:;">名师授课</a></li>
+                    <li><a href="javascript:;">课堂互动</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                    <li><a href="javascript:;">个人中心</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!--轮播图-->
+<section id="lk_carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-sm-img="img/carousel/1_640x340.jpg"
+                 data-lg-img="img/carousel/1_1600x400.jpg">
+            </div>
+            <div class="item" data-sm-img="img/carousel/2_640x340.jpg"
+                 data-lg-img="img/carousel/2_1600x400.jpg">
+            </div>
+            <div class="item" data-sm-img="img/carousel/3_640x340.jpg"
+                 data-lg-img="img/carousel/3_1600x400.jpg">
+            </div>
+            <div class="item" data-sm-img="img/carousel/4_640x340.jpg"
+                 data-lg-img="img/carousel/4_1600x400.jpg">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="icon-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="icon-right" aria-hidden="true"></span>
+        </a>
+    </div>
+</section>
+
+<!--关于我们-->
+<section id="lk_aboutus" class="hidden-xs hidden-sm">
+    <div class="title">
+        <h1><strong>关于我们</strong></h1>
+        <i class="icon-togue"></i>
+    </div>
+    <!--主要内容-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-muted">2019年6月19至21日，专项首席科学家丁抗所长、深海所副所长彭晓彤、
+                    总工程师张艾群等领导和专项骨干成员出席了会议。
+                    会议邀请了院内外12名技术评审专家和5位财务专家共同组成了验收专家组。</p>
+                <p class="text-muted">专项依托深海所，组建了具有国际竞争力的核心研究团队，
+                    涉及27个院内外单位，其中院内单位18个，院外单位9个.</p>
+                <p class="text-muted">院前沿局于汉超主管首先对专项五年来的实施情况给予了高度评价，
+                    对专项的结题验收进行了指导，并对专项未来的发展给予了建议。
+                    科技处代处长徐明秀介绍了专项背景和结题验收情况。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/cat.jpg" alt="" class="img-rounded img-responsive">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--产品特色-->
+<section id="lk_product">
+    <div class="container">
+        <div class="row">
+            <div style="overflow: auto;">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">在线学习</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#product1" aria-controls="profile" role="tab" data-toggle="tab">会员特权</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#product2" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a>
+                    </li>
+                    <li class="pull-right hidden-sm hidden-xs">
+                        <a href="#more" aria-controls="settings" role="tab" data-toggle="tab">更多</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active fade in" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 pd-left">
+                                <!--第一部分-->
+                                <div id="pro1_1" class="media">
+                                    <div class="media-left">
+                                        <a href="javascript:;">
+                                            <img class="media-object" style="width: 140px;" src="img/wechat.jpg"
+                                                 alt="二维码">
+                                        </a>
+                                    </div>
+                                    <div class="media-body text-muted">
+                                        <h4 class="media-heading">更多资讯欢迎</h4>
+                                        <h4 class="media-heading">关注Bootstrap学院</h4>
+                                    </div>
+                                </div>
+                                <!--第二部分-->
+                                <ol id='pro1_2' class="breadcrumb lead">
+                                    <li><a href="#">HTML5</a></li>
+                                    <li><a href="#">CSS3</a></li>
+                                    <li><a href="#">Javascript</a></li>
+                                    <li><a href="#">Vue</a></li>
+                                </ol>
+                                <!--第三部分-->
+                                <h1 id="pro1_3">
+                                    欢迎来到&nbsp;&nbsp;
+                                    <strong class="text-danger">Bootstrap学院</strong>
+                                </h1>
+                                <!--第四部分-->
+                                <div id="pro1_4">
+                                    <button class="btn btn-primary btn-lg">立即加入</button>
+                                    <button style="margin-left: 30px;" class="btn btn-default btn-lg">了解更多</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img src="img/ipx.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img src="img/ipx.png" alt="" class="img-responsive">
+                            </div>
+                            <div id='pro2' class="col-md-8 pd-left">
+                                <h1 class="text-warning">Bootstrap学院学员</h1>
+                                <p class="lead">专项依托深海所，组建了具有国际竞争力的核心研究团队，
+                                    涉及27个院内外单位，其中院内单位18个，院外单位9个.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 pd-left">
+                                <h1 class="text-danger">
+                                    <strong>
+                                        案例驱动&体系贯穿&全面系统
+                                    </strong>
+                                </h1>
+                                <h3>
+                                    10-15分钟的视频
+                                    <span class="text-warning">简短而不简单</span>
+                                </h3>
+                                <h4 class="text-muted" style="margin: 15px 0;">带你上手Bootstrap，从入门到放弃</h4>
+                                <div class="badge" style="padding: 15px 10px;cursor: pointer;">
+                                    已更新3000+视频|劝退100000+人
+                                </div>
+                            </div>
+                            <div class="col-md-6 hidden-sm hidden-xs">
+                                <img src="img/mac.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--热门课程-->
+<section id="lk_hot">
+    <div class="title">
+        <h1><strong>热门课程</strong></h1>
+        <i class="icon-togue"></i>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu1.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu2.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu3.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu4.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu5.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle img-thumbnail"
+                             src="img/menu/menu6.png" style="width: 100px;" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转HTML+跨平台
+                        </h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            从入门到放弃，李老师为您一条龙劝退！
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <p class="text-danger">206节课</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--友情链接-->
+<section id="lk_link">
+    <div class="title">
+        <h1><strong>友情链接</strong></h1>
+        <i class="icon-togue"></i>
+    </div>
+    <ul class="logos">
+        <li><a href=""><img src="img/media/wechat.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/skype.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/instagram.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/wallet.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/tripadvisor.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/airbnb.png" alt=""></a></li>
+        <li><a href=""><img src="img/media/slack.png" alt=""></a></li>
+    </ul>
+</section>
+
+<!--底部-->
+<footer id="lk_footer" class="hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1 p1">
+                <div class="row">
+                    <ul class="col-md-6">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">课程介绍</a></li>
+                        <li><a href="">热门课程</a></li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="">名师授课</a></li>
+                        <li><a href="">课堂互动</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 p2">
+                <h5>\(^o^)/~:12345671234</h5>
+                <h5>\(^o^)/~:北京市昌平区北农路2号</h5>
+                <h5>\(^o^)/~:bootstrapcollege@bc.com</h5>
+            </div>
+            <div class="col-md-3 p3">
+                <h5>联系我们：</h5>
+                <div class="p3_1">
+                    <a href="">
+                        <img src="img/media/wechat.png" alt="" width="50px"
+                             data-toggle="tooltip" data-placement="bottom" title="关注微信">
+                    </a>
+                    <a href="">
+                        <img src="img/media/whatsapp.png" alt="" width="50px"
+                             data-toggle="tooltip" data-placement="bottom" title="来个电">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--登录模态框-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">登录</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="请输入手机号码">
+                <input type="text" placeholder="请输入验证码">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="lib/js/jquery.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="lib/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
