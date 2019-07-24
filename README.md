@@ -10,4 +10,6 @@
 ## 增加并美化了登录及注册界面 
 1. 模仿邮箱登录注册界面
 2. 实现互相跳转 但存在触发滚动条的小bug
-[!image](https://github.com/XBB1995/bootstrap_college_demo/blob/master/img/register.png)
+
+
+![image](https://github.com/XBB1995/bootstrap_college_demo/blob/master/img/register.png)
