@@ -40,7 +40,8 @@ body {
     /*background-color: red;*/
     position: absolute;
     left: 50%;
-    margin-left: -70px;
+    /*margin-left: -70px;*/
+    transform: translate(-50%);
     display: none;
     z-index: 9999;
 }

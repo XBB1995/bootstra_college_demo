@@ -1,4 +1,4 @@
-# bootstra_college_demo
+# bootstrap_college_demo
 学习bootstrap知识制作的简易网页demo
 
 ## 学习收获
